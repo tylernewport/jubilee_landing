@@ -1,0 +1,261 @@
+:root {
+  --alt-font: "Lora", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header > div,
+section > div,
+footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+header {
+  height: 90vh;
+  background: url(https://skillcrush.github.io/101-jubilee_austen/img/full-background.png)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 1rem;
+}
+
+.nav-bar h2 {
+  font-family: var(--alt-font);
+  color: #bbc085;
+  font-size: 2rem;
+}
+
+.nav-bar div {
+  justify-self: right;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #777;
+  padding: 0rem 2rem;
+  font-size: 1.2rem;
+}
+
+.showcase h1 {
+  font-family: var(--alt-font);
+  color: #777;
+  font-size: 4.6rem;
+}
+
+.showcase h1 b {
+  color: #000;
+  font-family: var(--alt-font);
+}
+
+.about-section {
+  background: #fff;
+}
+
+.about-container h2 {
+  font-family: var(--alt-font);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-container div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.work-section {
+  background: #f9ceb7;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 120px;
+  text-align: center;
+}
+
+.work-container img {
+  margin-bottom: 2rem;
+}
+
+.work-container h3 {
+  margin: 0 auto 2rem auto;
+  font-size: 1.7rem;
+  width: 220px;
+}
+
+.work-container p {
+  font-family: var(--alt-font);
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.footer {
+  background: #ebebeb;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  line-height: 2;
+}
+
+.footer-container img {
+  border: 15px solid #fff;
+}
+
+.footer-container > div {
+  padding: 1.5rem;
+}
+
+.footer-container h2 {
+  font-family: var(--alt-font);
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.footer-container p {
+  font-size: 2.2rem;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #c49075;
+  font-size: 1.8rem;
+}
+
+.fa-envelope {
+  margin-bottom: 2rem;
+}
+
+.footer-container b {
+  font-size: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+@media (max-width: 1200px) {
+  header > div,
+  section > div,
+  footer > div {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+  }
+
+  .work-container,
+  .footer-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-bar a {
+    padding: 0 1rem;
+  }
+
+  .about-container div,
+  .work-container,
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .footer-container {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-container img {
+    width: 80%;
+  }
+
+  .social-links {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .nav-bar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .nav-bar div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 1rem;
+    justify-self: center;
+  }
+
+  .showcase h1 {
+    font-size: 3rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-container p {
+    font-size: 1.3rem;
+  }
+
+  .about-container div,
+  .work-container,
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-container p {
+    font-size: 1.3rem;
+  }
+
+  .footer-container a {
+    text-decoration: none;
+    color: #c49075;
+    font-size: 1.2rem;
+  }
+
+  .footer-container b {
+    font-size: 1.3rem;
+  }
+}
